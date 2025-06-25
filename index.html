@@ -16,7 +16,7 @@
         padding: 2rem 0;
       }
       .hero img {
-        max-width: 300px;
+        max-width: 180px;
         height: auto;
         margin-bottom: 1rem;
       }
@@ -29,11 +29,13 @@
         text-align: center;
         padding: 2rem 0;
       }
-      .theme-toggle {
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
-        z-index: 9999;
+      .theme-icon {
+        background: none;
+        border: none;
+        color: var(--primary);
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-left: 1rem;
       }
     </style>
   </head>
@@ -47,6 +49,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#booking">Booking</a></li>
         <li><a href="#contact" role="button">Contact</a></li>
+        <li><button class="theme-icon" onclick="toggleTheme()">🌓</button></li>
       </ul>
     </nav>
 
@@ -121,16 +124,11 @@
       </small>
     </footer>
 
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-
     <script>
       function toggleTheme() {
         const html = document.documentElement;
-        if (html.getAttribute('data-theme') === 'light') {
-          html.setAttribute('data-theme', 'dark');
-        } else {
-          html.setAttribute('data-theme', 'light');
-        }
+        const currentTheme = html.getAttribute('data-theme');
+        html.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
       }
     </script>
   </body>
