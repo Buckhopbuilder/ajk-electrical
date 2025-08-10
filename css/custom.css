@@ -109,3 +109,11 @@ ul.feature-list li { list-style: "✓ "; padding-left:.25rem; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+.brand img {
+  height: 64px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .brand img { height: 56px; }
+}
