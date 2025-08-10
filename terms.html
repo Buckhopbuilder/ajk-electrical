@@ -1,20 +1,57 @@
-<!DOCTYPE html><html lang='en'><head>  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms & Conditions</title>
-  <meta name="description" content="Terms & conditions for AJK Electrical." />
-  <meta name="robots" content="noindex, nofollow" />
-  <meta property="og:title" content="Terms & Conditions">
-  <meta property="og:description" content="Terms & conditions for AJK Electrical.">
-  <meta property="og:image" content="assets/logo-og.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/terms.html">
-  <link rel="stylesheet" href="css/style.css" /></head><body><header>
-  <div class="container nav">
-    <img src="logo.jpg" alt="AJK Electrical Logo" />
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="service-areas.html">Service Areas</a>
-    <a href="booking.html">Book a Quote</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</header><main class='container hero'><h1>Terms &amp; Conditions</h1><p class='lead'>Placeholder terms. Replace before launch.</p></main><footer><div class="container">&copy; 2025 AJK Electrical &amp; Air Conditioning • Northern NSW &amp; Gold Coast</div></footer></body></html>
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Terms of service for AJK Electrical &amp; Air Conditioning." name="description"/>
+<meta content="noindex, nofollow" name="robots"/>
+<title>Terms | AJK Electrical &amp; Air Conditioning</title>
+<!-- Pico.css CDN -->
+<link href="https://unpkg.com/@picocss/pico@2/css/pico.min.css" rel="stylesheet"/>
+<link href="css/custom.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="container">
+<nav class="ajk-nav">
+<a class="brand" href="index.html">
+<img alt="AJK Electrical &amp; Air Conditioning" height="52" src="assets/img/ajklogo.png" width="160"/>
+</a>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="service-areas.html">Service Areas</a></li>
+<li><a href="book.html" role="button">Book a Quote</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main class="container">
+<h1>Terms of Service</h1><p>Placeholder – pending final copy.</p>
+</main>
+<footer class="container ajk-footer">
+<small>© 2025 AJK Electrical &amp; Air Conditioning · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></small>
+<div class="theme-toggle">
+<button aria-label="Toggle theme" id="themeToggle">🌓</button>
+</div>
+</footer>
+<script>
+// Light/Dark mode toggle
+const root = document.documentElement;
+const btn = document.getElementById('themeToggle');
+function setTheme(t){ root.setAttribute('data-theme', t); localStorage.setItem('ajk-theme', t); }
+(function(){
+  const saved = localStorage.getItem('ajk-theme');
+  if(saved){ setTheme(saved); }
+})();
+btn && btn.addEventListener('click', ()=>{
+  const cur = root.getAttribute('data-theme') || 'light';
+  setTheme(cur==='light' ? 'dark' : 'light');
+});
+// Add lazy to non-logo images if missing (progressive enhancement)
+document.querySelectorAll('img').forEach(img=>{
+  if(!/ajklogo\.png$/i.test(img.src)) img.loading = img.loading || 'lazy';
+});
+</script>
+</body>
+</html>

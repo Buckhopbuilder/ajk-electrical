@@ -1,1 +1,0 @@
-Polished static site. NOINDEX until approval.
