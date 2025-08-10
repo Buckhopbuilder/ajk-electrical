@@ -1,11 +1,9 @@
 
 body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
 header, footer { background: #0b0d10; color: white; padding: 1rem; }
-nav a { color: white; margin-right: 1rem; text-decoration: none; }
+nav a { color: white; margin: 0 0 0 1rem; text-decoration: none; }
+nav img { height: 40px; vertical-align: middle; margin-right: 0.5rem; }
 main { padding: 1rem; max-width: 1100px; margin: auto; }
 h1, h2, h3 { color: #0b0d10; }
 a.cta-button { display: inline-block; padding: 0.6rem 1rem; background: #0b5fff; color: white; text-decoration: none; border-radius: 5px; }
-@media (prefers-color-scheme: dark) {
-  body { background: #0b0d10; color: #e7ecf3; }
-  h1, h2, h3 { color: #e7ecf3; }
-}
+@media (prefers-color-scheme: dark) { body { background: #0b0d10; color: #e7ecf3; } h1, h2, h3 { color: #e7ecf3; } }
