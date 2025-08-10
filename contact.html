@@ -1,31 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact AJK Electrical</title>
+  <meta name="description" content="Contact AJK Electrical & Air Conditioning for fast quotes and reliable service." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Contact AJK Electrical">
+  <meta property="og:description" content="Contact AJK Electrical & Air Conditioning for fast quotes and reliable service.">
   <meta property="og:image" content="assets/logo-og.png">
-</head>
-<body>
-<header>
-  <nav>
-    <img src="assets/logo-light.png" alt="AJK Electrical Logo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/contact.html">
+  <link rel="stylesheet" href="css/style.css" />
+</head><body><header>
+  <div class="container nav">
+    <img src="logo.jpg" alt="AJK Electrical Logo" />
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="service-areas.html">Service Areas</a>
     <a href="booking.html">Book a Quote</a>
     <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-  <h1>Contact Us</h1>
-  <p>Get in touch for quotes and inquiries.</p>
-  <p style="margin-top:2rem;"><a href="service-areas.html">See all our service areas</a></p>
-</main>
-<footer>
-  <p>&copy; 2025 AJK Electrical & Air Conditioning</p>
-</footer>
-</body>
-</html>
+  </div>
+</header><main class="container hero">
+<h1>Contact</h1><p class="lead">Tell us about your job and the best way to reach you. We’ll reply quickly.</p>
+<form class="form card" name="contact" netlify data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+  <div><label>Name<input name="name" required placeholder="Your name"></label></div>
+  <div><label>Phone or Email<input name="contact" required placeholder="Phone or email"></label></div>
+  <div><label>Suburb<select name="suburb">
+    <option value="">Select</option><option>Tweed Heads</option><option>Kingscliff</option><option>Pottsville</option>
+    <option>Burleigh Heads</option><option>Robina</option><option>Coolangatta</option><option>Helensvale</option>
+    <option>Murwillumbah</option><option>Banora Point</option><option>Palm Beach</option>
+  </select></label></div>
+  <div><label>Job details<textarea name="details" rows="6" placeholder="Tell us what you need done"></textarea></label></div>
+  <button class="btn btn-primary" type="submit">Send</button>
+</form>
+</main><footer><div class="container">&copy; 2025 AJK Electrical &amp; Air Conditioning • Northern NSW &amp; Gold Coast</div></footer></body></html>
